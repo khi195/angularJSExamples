@@ -11,7 +11,7 @@
       </title>
    </head>
 <Body ng-app = "submitForm">
-  <div ng-controller = "submit as submitCtrl">
+  <div ng-controller = "submit">
    <h1>Example of a submit Form AngularJS</h1>   
    
   
@@ -20,10 +20,9 @@
       <br><br>
       <input type="submit" value = "Send Message to controller" />        
       
-  
   </form>
+  {{submitArray}}
   
-  {{submitMessage}}
   </div>
     
 </body>

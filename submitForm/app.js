@@ -1,11 +1,16 @@
 var app = angular.module('submitForm', []);
 
 
-app.controller('submit', function(){
+app.controller('submit', function($scope){
 
-this.submit = function(){
+// define a array for storing the values
 
-this.message = "This is from the controller submit";
+$scope.submitArray = [];
+
+$scope.submit = function(){
+
+$scope.submitArray.push(this.submitMessage);
+console.log($scope.submitArray)
 
 }
 
