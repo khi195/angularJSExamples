@@ -14,16 +14,26 @@
   <div ng-controller = "submit">
    <h1>Example of a submit Form AngularJS</h1>   
    
-  
+     <h3> Submit message to controller element</h3>
+
   <form novalidate ng-submit = "submit()">
       <input type="text" ng-model = "submitMessage" placeholder="Enter a message">
       <br><br>
       <input type="submit" value = "Send Message to controller" />        
       
   </form>
-  {{submitArray}}
-  
+
+  {{submitArray}}        
+
+  <h3> Delete the last element</h3>
+
+  <form novalidate ng-submit = "delete()">
+      <input type="submit" value = "delete last message" />         
+  </form>
+    
   </div>
+
+   
     
 </body>
 </html>
