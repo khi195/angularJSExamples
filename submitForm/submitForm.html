@@ -12,8 +12,18 @@
    </head>
 <Body ng-app = "submitForm">
   <div ng-controller = "submit as submitCtrl">
-   <h1>{{submitCtrl.message}}</h1>
-   <P>Hello world Example for AngularJS</P>   
+   <h1>Example of a submit Form AngularJS</h1>   
+   
+  
+  <form novalidate ng-submit = "submit()">
+      <input type="text" ng-model = "submitMessage" placeholder="Enter a message">
+      <br><br>
+      <input type="submit" value = "Send Message to controller" />        
+      
+  
+  </form>
+  
+  {{submitMessage}}
   </div>
     
 </body>
